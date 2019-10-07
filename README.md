@@ -4,6 +4,6 @@ This repository contains tutorials for learning about inference of species trees
 
 - [Simulate gene trees under the multispecies coalescent](https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/master/Simulate_gene_trees.md)
 
-- Carry out a multispecies coalescent analysis in RevBayes
+- [Carry out a multispecies coalescent analysis in RevBayes](https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/master/RB_MultispeciesCoalescentTutorial.md)
 
 - Carry out a fast species tree analysis with ASTRAL

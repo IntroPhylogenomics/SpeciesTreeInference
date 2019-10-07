@@ -76,5 +76,5 @@ Now we can go to our save folder and open the gene trees in FigTree (use the arr
 
 > __Practice__
 >
-> (1) Modify your simulation script in order to test this prediction by redoing the simulation with a population size of 3. Be sure to modify your files names to avoid overwriting results.
+> (1) Modify your script in order to test this prediction by redoing the simulation with a population size of 3. Be sure to modify your file names to avoid overwriting results.
 
