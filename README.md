@@ -4,3 +4,4 @@ This repository contains tutorials for learning about inference of species trees
 
 - [Simulate gene trees under the coalescent](https://github.com/IntroPhylogenomics/SpeciesTreeInference/Simulate_gene_trees.md)
 
+https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/Simulate_gene_trees.md
