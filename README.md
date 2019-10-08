@@ -8,7 +8,7 @@ This repository contains tutorials for learning about inference of species trees
 
 - [Carry out a fast species tree analysis with ASTRAL](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md)
 
-We'll use two additional pieces of software to perform species tree inference under the multispecies network coalescent and gene duplication and loss, respectively.
+We'll use two additional pieces of software to perform species tree inference under the multispecies network coalescent and gene duplication and loss. You'll need [PhyloNet](https://bioinfocs.rice.edu/phylonet) and [PHYLDOG](https://pbil.univ-lyon1.fr/software/phyldog/) to work through the respective tutorials.
 
 - [Inference under the Multispecies Network Coalescent with PhyloNet](https://wiki.rice.edu/confluence/pages/viewpage.action?pageId=8898533#PhyloNetTutorial%28SpeciesPhylogenyInference%29-5.VisualizingaPhylogeneticNetwork)
 
