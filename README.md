@@ -15,7 +15,7 @@ Open this estimate of the species tree with FigTree and compare it to your estim
 
 ASTRAL contains much more functionality and easily scales to thousands of gene trees. The following turtorial will explain much of this extra functionality and provide examples of very large scale analyses.
 
--[Carry out fast species tree analysis with ASTRAL](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md)
+- [Carry out fast species tree analysis with ASTRAL](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md)
 
 We'll use two additional pieces of software to perform species tree inference under the multispecies network coalescent and gene duplication and loss. You'll need [PhyloNet](https://bioinfocs.rice.edu/phylonet) and [PHYLDOG](https://pbil.univ-lyon1.fr/software/phyldog/) to work through the respective tutorials.
 
