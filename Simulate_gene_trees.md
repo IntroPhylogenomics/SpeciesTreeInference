@@ -34,17 +34,17 @@ for (i in 1:n_species) {
 }
 ```
 
-Now we can simulate the species tree under a model for species trees called the Birth Death process, and save this tree to a file. Here lambda is the rate at which speciation happens, mu is the rate at which extinction happens (we set this to zero, so we assume extinction does not happen), and rootAge is the total age of the tree that we will simulate. Rho refers to the fraction os species in the tree that we have sampled (we will assume they are sampled, so this fraction is set to 1.0).
+Now we can simulate the species tree under a model for species trees called the Birth Death process, and save this tree to a file. Here lambda is the rate at which speciation happens, mu is the rate at which extinction happens (we set this to zero, so we assume extinction does not happen), and rootAge is the total age of the tree that we will simulate. Rho refers to the fraction of species in the tree that we have sampled (we will assume they are sampled, so this fraction is set to 1.0).
 
 ```
 spTree ~ dnBirthDeath(lambda=0.3, mu=0, rootAge=10, rho=1, samplingStrategy="uniform", condition="nTaxa", taxa=species)
 write(spTree, filename=dataFolder+"speciesTree.tre")
 
 ```
-Open this file in FigTree (or another tree viewer) to see our simulated topology. Before we can simulate gene trees under this species tree, we need to specify the population sizes for each branch of the species tree. Here, we'll simply assume that all branches in the species tree have the population size.
+Open this file in FigTree (or another tree viewer) to see our simulated topology. Before we can simulate gene trees under this species tree, we need to specify the population sizes along its branches. Here, we'll simply assume that all branches have the same population size (arbitrarily set to 30).
 
 ```
-popSize <- 3
+popSize <- 30
 ```
 > __Questions__
 >
