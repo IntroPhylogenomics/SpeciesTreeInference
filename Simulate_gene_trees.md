@@ -44,7 +44,7 @@ write(spTree, filename=dataFolder+"speciesTree.tre")
 Open this file in FigTree (or another tree viewer) to see our simulated topology. Before we can simulate gene trees under this species tree, we need to specify the population sizes for each branch of the species tree. Here, we'll simply assume that all branches in the species tree have the population size.
 
 ```
-popSize <- 30
+popSize <- 3
 ```
 > __Questions__
 >
@@ -58,11 +58,12 @@ Now we can simulate our gene trees and write them to file:
 for (g in 1:n_genes) {
   for (i in 1:n_species) {
     for (j in 1:n_alleles) {
-        taxons[g][(i-1)*n_alleles+j] <- taxon(taxonName="Species_"+i+"_"+j, speciesName="Species_"+i)
+        taxa[g][(i-1)*n_alleles+j] <- taxon(taxonName="Species_"+i+"_"+j, speciesName="Species_"+i)
     }
   }
-  geneTrees[g] ~ dnMultiSpeciesCoalescent(speciesTree=spTree, Ne=popSize, taxa=taxons[g])
+  geneTrees[g] ~ dnMultiSpeciesCoalescent(speciesTree=spTree, Ne=popSize, taxa=taxa[g])
 }
+write(geneTrees, filename=dataFolder+"geneTrees.tre")
 ```
 Now we can go to our save folder and open the gene trees in FigTree (use the arrows at the top of the window to go through them).
 
