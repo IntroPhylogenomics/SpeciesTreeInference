@@ -30,7 +30,6 @@ We can use a for loop to easily set up species names:
 
 ```
 for (i in 1:n_species) {
-        print(i)
         species[i] <- taxon(taxonName="Species_"+i, speciesName="Species_"+i)
 }
 ```
@@ -57,14 +56,13 @@ Now we can simulate our gene trees and write them to file:
 
 ```
 for (g in 1:n_genes) {
-	for (i in 1:n_species) {
-    	for (j in 1:n_alleles) {
-       		taxa[g][(i-1)*n_alleles+j] <- taxon(taxonName="Species_"+i+"_"+j, speciesName="Species_"+i)
+  for (i in 1:n_species) {
+    for (j in 1:n_alleles) {
+        taxons[g][(i-1)*n_alleles+j] <- taxon(taxonName="Species_"+i+"_"+j, speciesName="Species_"+i)
     }
   }
-  geneTrees[g] ~ dnMultiSpeciesCoalescent(speciesTree=spTree, Ne=popSize, taxa=taxa[g])
+  geneTrees[g] ~ dnMultiSpeciesCoalescent(speciesTree=spTree, Ne=popSize, taxa=taxons[g])
 }
-write(geneTrees, filename=dataFolder+"geneTrees.tre")
 ```
 Now we can go to our save folder and open the gene trees in FigTree (use the arrows at the top of the window to go through them).
 
