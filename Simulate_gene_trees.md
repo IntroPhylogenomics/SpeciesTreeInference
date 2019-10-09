@@ -5,7 +5,7 @@ This file will walk you through simulating gene trees under the multispecies coa
 First, create a folder to store our simulations in. To do so, open terminal and type:
 
 ```
-mkdir simulated_trees
+mkdir simulatedTrees
 ```
 Now we start RevBayes by typing:
 
