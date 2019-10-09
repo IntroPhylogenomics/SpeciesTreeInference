@@ -6,7 +6,7 @@ This repository contains tutorials for learning about inference of species trees
 
 - [Carry out a multispecies coalescent analysis in RevBayes](https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/master/RB_MultispeciesCoalescentTutorial.md)
 
-Now we'll carry out fast species tree analyses with ASTRAl. We can start by re-analyzing the same data that we just analyzed in RevBayes. To do so, download [this](https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/master/unrooted_trees.tre) file which simply contains unrooted estimates of gene trees for the loci that we just analyzed in RevBayes. You can run a quick ASTRAL analysis of these gene trees with:
+Now we'll carry out fast species tree analyses with ASTRAL. We can start by re-analyzing the same data that we just analyzed in RevBayes. To do so, download [this](https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/master/unrooted_trees.tre) file which simply contains unrooted estimates of gene trees for the loci that we just analyzed in RevBayes. You can run a quick ASTRAL analysis of these gene trees with:
 
 ```
 java -jar astral.5.6.3.jar -i /path/to/unrooted_trees.tre -o species.tre
