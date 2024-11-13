@@ -15,7 +15,7 @@ Open this estimate of the species tree with FigTree and compare it to your estim
 
 ASTRAL and related programs contain much more functionality and can scale to thousands of gene trees, whole genome alignments, and multi-copy gene families. The following documentation will explain much of this extra functionality and provide examples of very large scale analyses.
 
-- [Accurate Species Tree EstimatoR ASTER**](https://github.com/chaoszhang/ASTER/tree/master)
+- [Accurate Species Tree EstimatoR ASTER*](https://github.com/chaoszhang/ASTER/tree/master)
 
 You might also be interested in [SVDQuartets](https://www.asc.ohio-state.edu/kubatko.2/software/SVDquartets/), which provides another way to estimate species trees using quartets. This approach estimates quartets directly from the distribution of site patterns in the data, and so relies less on assumptions about gene trees being estimated correctly.
 
