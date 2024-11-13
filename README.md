@@ -9,7 +9,7 @@ This repository contains tutorials for learning about inference of species trees
 Now we'll carry out fast species tree analyses with [ASTRAL](https://github.com/chaoszhang/ASTER). We can start by re-analyzing the same data that we just analyzed in RevBayes. To do so, download [this](https://github.com/IntroPhylogenomics/SpeciesTreeInference/blob/master/unrooted_trees.tre) file which simply contains unrooted estimates of gene trees for the loci that we just analyzed in RevBayes. You can run a quick ASTRAL analysis of these gene trees with:
 
 ```
-astral4 -i unrooted_trees.tre -o species_tree.tre -i /path/to/unrooted_trees.tre -o species.tre
+astral4 -i /path/to/unrooted_trees.tre -o species.tre
 ```
 Open this estimate of the species tree with FigTree and compare it to your estimate from RevBayes. Are the trees similar? What is likely driving any differences?
 
